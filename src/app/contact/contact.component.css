@@ -156,3 +156,12 @@
         padding:3px;
     }
 }
+
+@media (max-width:300px){
+    .contact-form-container {
+        margin: 0;
+    }
+    .contact-details-container {
+        margin: 0;
+    }
+}
