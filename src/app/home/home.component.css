@@ -1,0 +1,60 @@
+.home{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.home fieldset{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-leftSection{
+    padding: 2rem;
+    text-align: justify;
+    width: 70%;
+}
+
+.home-rightSection{
+    padding: 2rem;
+}
+
+.home-leftSection .heading{
+    font-size: 25px;
+    margin: 0;
+}
+
+.home-leftSection .subheading{
+    font-size: 20px;
+}
+
+.home-leftSection .content{
+    font-size: 18px;
+}
+
+.home-leftSection .home-button{
+    padding: 10px;
+    margin : 5px 0;
+    background: none;
+    border-radius: 5px;
+}
+
+.home-leftSection .home-button a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:900px){
+    .home{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .home fieldset{
+        flex-direction: column;
+    }
+    .home-leftSection{
+        width: 100%;
+    }
+}

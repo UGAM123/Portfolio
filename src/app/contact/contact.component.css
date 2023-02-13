@@ -1,0 +1,158 @@
+.contact-container {
+    width: 75%;
+    margin: auto;
+    padding: 50px;
+}
+
+.contact-fieldset {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.contact-form {
+    display: flex;
+}
+
+.contact-form-container {
+    padding: 20px;
+    width: 70%;
+}
+
+.spacer {
+    flex: 1 1 auto
+}
+
+.contact-details-container {
+    margin: 0;
+}
+
+.contact-intro {
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.contact-name {
+    width: 35%;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 15px;
+}
+
+.contact-email {
+    width: 35%;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 10%;
+    padding: 15px;
+}
+
+.contact-message {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+.contact-submit {
+    width: 35%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    background: none;
+    cursor: pointer;
+}
+
+.contact-details-container .email-id {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.contact-details-container .mobile-number {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.contact-details-container .address {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.contact-details-container .email-id p {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.contact-details-container .mobile-number p {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.contact-details-container .address p {
+    margin: 0;
+    padding:3px 0;
+}
+
+@media (max-width:900px) {
+    .contact-container {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-name {
+        width: 45%;
+    }
+
+    .contact-email {
+        width: 45%;
+    }
+
+    .contact-message {
+        width: 100%;
+    }
+
+    .contact-details-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact-details-container .email-id {
+        flex-direction: row;
+    }
+    
+    .contact-details-container .mobile-number {
+        flex-direction: row;
+    }
+    
+    .contact-details-container .address {
+        flex-direction: row;
+    }
+
+    .contact-details-container .email-id p {
+        padding: 3px;
+    }
+    
+    .contact-details-container .mobile-number p {
+        padding: 3px 3px;
+    }
+    
+    .contact-details-container .address p {
+        padding:3px;
+    }
+}

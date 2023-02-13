@@ -1,0 +1,91 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar-logo{
+    margin: 1.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.navbar-tabs ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-tabs li{
+    list-style: none;
+}
+
+.navbar-tabs li a{
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem 1rem 0 2rem;
+    display: block;
+}
+
+.navbar-tabs li a:hover{
+    color: lightgray;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2.25rem;
+    right: 2rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 4px;
+    width: 100%;
+    background-color  :black;
+    border-radius: 4px;
+}
+
+@media (max-width:600px){
+    .navbar{
+        width: 90%;
+    }
+    
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-tabs{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-tabs ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-tabs li{
+        text-align: center;
+    }
+
+    .navbar-tabs li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-tabs.active{
+        display:flex;
+    }
+}

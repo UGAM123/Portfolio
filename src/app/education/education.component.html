@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="tabs-container">
+      <button (click)="onTabClick('1')" [class.active]="activeTab == '1'" class="tab-button">Graduation</button>
+      <button (click)="onTabClick('2')" [class.active]="activeTab == '2'" class="tab-button">XII th</button>
+      <button (click)="onTabClick('3')" [class.active]="activeTab == '3'" class="tab-button">X th</button>
+    </div>
+    <div *ngIf="activeTab == '1'" class="bgImg1">
+      <div *ngIf="activeTab == '1'" class="tab-content">
+          <br>
+          <p class="heading">Bachelors Of Engineering</p>
+          <p class="subheading">Specialization in Mechanical</p>
+          <p class="content">Graduation Year : 2022</p>
+          <p class="content">Thakur College of Engineering and Technology</p>
+          <p class="content">CGPA : 9.39</p>
+      </div>
+    </div>
+    <div *ngIf="activeTab == '2'" class="bgImg2">
+      <div *ngIf="activeTab == '2'" class="tab-content">
+          <br>
+          <p class="heading">Higher Education</p>
+          <p class="subheading">Science</p>
+          <p class="content">Passing Year : 2018</p>
+          <p class="content">Viva College</p>
+          <p class="content">Percentage : 83.23%</p>
+      </div>
+    </div>
+    <div *ngIf="activeTab == '3'" class="bgImg3">
+      <div *ngIf="activeTab == '3'" class="tab-content">
+          <br>
+          <p class="heading">Secondary Education</p>
+          <p class="subheading"></p>
+          <p class="content">Passing Year : 2016</p>
+          <p class="content">National English High School</p>
+          <p class="content">Percentage : 91.00%</p>
+      </div>
+    </div>
+  </div>
